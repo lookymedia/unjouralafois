@@ -31,7 +31,7 @@
 
             <div class="image-post-index"> <%= link_to image_tag(link.image.url(:medium), class: "img-rounded"), link  %></div>
 
-     <p>  <%= link.message %> </p> <button class=" btn btn-default"><%= link_to 'Laissez un commentaire', link %></button> <span class="glyphicon glyphicon-heart text-center" style="color:red;"></span> <%= link.get_likes.count %> 
+     <p>  <%= link.message %> </p> <button class=" btn btn-default"><span class="glyphicon glyphicon-comment"></span>   <%= link_to 'Laissez un commentaire', link %></button> <span class="glyphicon glyphicon-heart text-center" style="color:red;"></span> <%= link.get_likes.count %> 
      
 
     <hr>
