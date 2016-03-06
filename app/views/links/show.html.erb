@@ -40,8 +40,11 @@
  </div>
  <% end %>
 
- <% if current_user.admin? %>
+ <% if current_user.try(:admin?) %>
  <%= link_to 'Admin Supprimer', @link, method: :delete, data: { confirm: 'Ëtes-vous sûr de vouloir supprimer votre partage?'}, class: "btn btn-green" %>
+
+ <% else %>
+ 
 <% end %>
 
         </div>
