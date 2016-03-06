@@ -27,7 +27,7 @@
     
       <h2 style="padding-bottom: 5px;"> <%= link_to link.title, link %> </h2>
       <h5 style="padding-bottom: 5px;">Partage de: <%=link.user.name %> </h5>
-     <p style="padding-bottom: 20px;">  <%= link.message %> </p>
+     <p style="padding-bottom: 0px;">  <%= link.message %> </p>
        <button class=" btn btn-green"><%= link_to 'Laissez un commentaire', link %></button> <%= link.comments.count %> commentaires
 
      
