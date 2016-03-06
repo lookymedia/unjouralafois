@@ -24,8 +24,10 @@
      <p style="padding-bottom: 20px;">  <%= @link.message %> </p>
        
        
+     <div class="text-center"> <%= link_to like_link_path(@link), method: :put, class: "btn btn-default text-center" do %> <span class="glyphicon glyphicon-heart text-center" style="color:red;"></span> <%= @link.get_likes.size %> 
+     <% end %>
    
-
+</div>
 
 
  </div>
@@ -72,7 +74,7 @@
 
       <% else %>
 
-       <%= link_to 'Connecte toi afin de pouvoir commenter', new_user_session_path, class: "btn btn-green" %>
+       <%= link_to 'Connecte toi afin de pouvoir laisser un commentaire', new_user_session_path, class: "btn btn-green" %>
 
       <% end %>
 
