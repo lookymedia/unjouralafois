@@ -27,6 +27,7 @@
     
       <h2 style="padding-bottom: 5px;"> <%= link_to link.title, link %> </h2>
            <h5 style="padding-bottom: 5px;">Partage de: <%=link.user.name %> </h5>
+           <h6 style="padding-bottom: 5px;"><%=link.created_at.strftime("%e %b %Y") %> </h6>
 
             <div class="image-post-index"> <%= image_tag link.image.url(:medium) %></div>
 
