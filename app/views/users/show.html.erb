@@ -1,0 +1,16 @@
+
+<h1 class="text-center">Users</h1>
+
+ <% if current_user.try(:admin?) %>
+
+<% @users.each do |user| %>
+<h4>Username: <%= user.name %></h4>
+<h4><%= user.email %> </h4>
+<hr>
+<% end %>
+
+<% else %>
+
+<h2 class="text-center">Nope! ;)</h2>
+
+<% end %>
