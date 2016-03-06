@@ -39,6 +39,8 @@ gem 'cancan', '~> 1.6', '>= 1.6.10'
 
 gem "paperclip", "~> 4.3"
 
+gem 'rmagick', '~> 2.15', '>= 2.15.4'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
