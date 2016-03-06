@@ -110,7 +110,9 @@ padding: 30px; color: #39CA74;
     background-size: cover;
     -o-background-size: cover;  padding: 0px;}
 
-    .journal2 {background: url("back-journal.jpg");
+    .journal2 {display: flex;
+  justify-content: center;
+  align-items: center; background: url("back-journal.jpg");
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
