@@ -1,0 +1,136 @@
+// Place all the styles related to the links controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'moskau_groteskregular'; 
+}
+
+
+
+.navbar .nav > li > a:hover {
+    float: none;
+
+    text-decoration: none;
+  	background-color: f4f4f4;
+    color:  #39CA74;
+    border-radius: 5px; 
+}
+
+@font-face {
+    font-family: 'moskau_groteskregular';
+    src: url('/assets/moskaugrotesk-webfont.eot');
+    src: url('/assets/moskaugrotesk-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/moskaugrotesk-webfont.woff2') format('woff2'),
+         url('/assets/moskaugrotesk-webfont.woff') format('woff'),
+         url('/assets/moskaugrotesk-webfont.ttf') format('truetype'),
+         url('/assets/moskaugrotesk-webfont.svg#moskau_groteskregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.navbar-static-top {height:75px;}
+
+.navbar-unjour { font-size: 20px; font-family: 'moskau_groteskregular'; }
+.navbar-right {margin-top: 20px;}
+.navbar-right > li > a {color:white; font-family: 'moskau_groteskregular';}
+.navbar-right > li > a:hover {color:white; text-decoration: underline; font-family: 'moskau_groteskregular';}
+
+.btn-green {font-size: 20px; font-family: 'moskau_groteskregular'; background-color: #39CA74;  border-radius: 5px; padding: 15px;}
+.btn-green > a {text-decoration: none;  color:white;}
+
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    color: #fff;
+    background: url("back-temp.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .header-content {
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+
+
+}
+
+header .header-content .header-content-inner hr {
+    margin: 30px auto;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+}
+
+#mainNavtrans {padding:20px;}
+
+#mainNav {padding:20px;}
+
+#mainNav a {color: #000000;}
+
+
+.inscrire {   position: relative; background: url("back-inscrire.png");
+padding: 30px; color: #39CA74; 
+
+}
+
+.inscription {}
+
+.journal {background: url("back-journal.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;  padding: 0px;}
+
+    .journal2 {background: url("back-journal.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; min-height:100%; padding: 0px;}
+
+.partage > h1 {color:black; font-size: 5rem; padding-bottom: 30px;}
+
+.partage {background-color: rgba(255,255,255,0.8); margin: 0 auto; width:60%; padding: 50px; color:black; min-height:100%; overflow: hidden;
+  text-overflow: ellipsis;}
+
+  .partage2 {background-color: rgba(255,255,255,0.8); margin: 0 auto;  padding: 50px; color:black; min-height:100%; overflow: hidden;
+  text-overflow: ellipsis;}
+
+.partage-id {padding-bottom: 50px;}
+
+
+.btn {color:white;  margin: 0; }
+
+@media (max-width:900px) { .partage {width:100%;} }
+
+
+footer {height: 75px; background-color: white; text-align: center; color:#39CA74; line-height: 75px;}

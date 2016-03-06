@@ -1,0 +1,83 @@
+
+
+
+<h1 class="text-center">  <%= @link.title %></h1>
+
+        <div class="partage-id">
+
+      <div class="row">
+
+      <div class="col-md-12">
+
+
+
+
+  <div class="row">
+
+      <div class="col-md-12">
+
+        <div class="partage-id">
+
+
+ 
+      <h4 style="padding-bottom: 40px;" class="text-center">Partage de: <%= @link.user.name %> </h4>
+     <p style="padding-bottom: 20px;">  <%= @link.message %> </p>
+       
+       
+   
+
+
+
+ </div>
+
+ <div class="row">
+
+<% if @link.user == current_user %>
+	<div class="btn-group">
+	<%= link_to 'Modifier', edit_link_path(@link), class: "btn btn-green" %>
+	<%= link_to 'Supprimer', @link, method: :delete, data: { confirm: 'Ëtes-vous sûr de vouloir supprimer votre partage?'}, class: "btn btn-green" %>
+
+ </div>
+ <% end %>
+
+        </div>
+
+
+  <h3 class="comments_title">
+    <%= @link.comments.count %> commentaires
+  </h3>
+  
+  <div id="comments">
+    <%= render :partial => @link.comments %>
+  </div>
+  
+  <%= simple_form_for [@link, Comment.new] do |f| %>
+
+      <div class="field">
+        <%= f.text_area :body, class: "form-control" %>
+      </div>
+
+      <br>
+
+      <% if user_signed_in? %>
+
+      <%= f.submit "Publier", class: "btn btn-green" %>
+
+      <% else %>
+
+       <%= link_to 'Connecte toi afin de pouvoir commenter', new_user_session_path, class: "btn btn-green" %>
+
+      <% end %>
+
+      <% end %>
+
+
+
+
+        </div>
+
+
+
+  </div>
+
+    </div>

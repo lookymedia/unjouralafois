@@ -1,0 +1,55 @@
+
+ 
+
+
+  <h1 class="text-center">Journal de bord</h1>
+
+        <div class="partage-id">
+
+      <div class="row">
+
+      <div class="col-md-12">
+
+
+
+
+  <div class="row">
+
+      <div class="col-md-12">
+
+        <div class="partage-id">
+
+    <% @links.each do |link| %>
+    
+      <h2 style="padding-bottom: 5px;"> <%= link_to link.title, link %> </h2>
+      <h5 style="padding-bottom: 5px;">Partage de: <%=link.user.name %> </h5>
+     <p style="padding-bottom: 20px;">  <%= link.message %> </p>
+       <button class=" btn btn-green"><%= link_to 'Laissez un commentaire', link %></button> <%= link.comments.count %> commentaires
+       
+   
+     
+    <% end %>
+
+
+ </div>
+
+ 
+
+ <div class="flickr_pagination">
+    
+   <div class="text-center"> <%= will_paginate @links, :previous_label => 'Précédent', :next_label => 'Suivant', :container => false %></div>
+  </div>
+
+  </div>
+
+        </div>
+
+        </div>
+
+
+
+  </div>
+
+    </div>
+
+      </div>

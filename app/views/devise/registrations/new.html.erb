@@ -1,0 +1,35 @@
+<h2>Joins-toi à 1 Jour À La Fois!</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+     <div class="form-group">
+      <%= f.label "Nom d'utilisateur" %>
+      <%= f.text_field :name, class: "form-control", :autofocus => true %>
+    </div>
+
+
+  <div class="form-group">
+    <%= f.label "Ton courriel" %><br />
+    <%= f.email_field :email, autofocus: true, class: "form-control", required: true %>
+  </div>
+
+    <div class="form-group">
+    <%= f.label "Mot de passe" %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> caractères minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off", class: "font-control", required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label "Confirmer mot de passe" %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit "Joindre", class: "btn btn-green" %>
+  </div>
+<% end %>
+
+
