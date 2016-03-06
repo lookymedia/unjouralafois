@@ -29,7 +29,7 @@
            <h5 style="padding-bottom: 5px;">Partage de: <%=link.user.name %> </h5>
            <h6 style="padding-bottom: 5px;"><%=link.created_at.strftime("%e %b %Y") %> </h6>
 
-            <div class="image-post-index"> <%= image_tag link.image.url(:medium) %></div>
+            <div class="image-post-index"> <%= link_to image_tag(link.image.url(:medium)), link  %></div>
 
      <p>  <%= link.message %> </p> <button class=" btn btn-default"><%= link_to 'Laissez un commentaire', link %></button> <span class="glyphicon glyphicon-heart text-center" style="color:red;"></span> <%= link.get_likes.count %> 
      
