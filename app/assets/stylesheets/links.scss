@@ -132,7 +132,14 @@ padding: 30px; color: #39CA74;
 
 .btn {color:white;  margin: 0; }
 
+.image-post {padding:20px 75px 40px 75px;}
+.image-post-index {padding:10px 0px 20px 0px;}
+
 .joinmobile {display:none;}
+
+.img-responsive {
+    margin: 0 auto;
+}
 
 @media (max-width:900px) { .partage {width:100%;} .joinmobile {display:block;} }
 
