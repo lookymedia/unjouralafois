@@ -25,7 +25,7 @@
       <div class="image-post center-block"> <%= image_tag @link.image.url(:large), class: "img-responsive" %>
 
    
-     <p style="padding-bottom: 20px;">  <%= @link.message %> </p>
+     <p style="padding-bottom: 20px; padding-top: 50px;">  <%= @link.message %> </p>
        
        
      <div class="text-center"> <%= link_to like_link_path(@link), method: :put, class: "btn btn-default text-center" do %> <span class="glyphicon glyphicon-heart text-center" style="color:red;"></span> <%= @link.get_likes.size %> 
