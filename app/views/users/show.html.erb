@@ -3,6 +3,10 @@
 
  <% if current_user.try(:admin?) %>
 
+ <h2>Total users: <%= User.count %></h2>
+
+ <hr>
+
 <% @users.each do |user| %>
 <h4>Username: <%= user.name %></h4>
 <h4><%= user.email %> </h4>
