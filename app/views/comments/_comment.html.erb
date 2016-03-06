@@ -3,9 +3,11 @@
 <div class="comments_wrapper clearfix">
 <div class="pull-left">
 
-	<p class="lead"> <%= comment.body %> </p>
+	<p> <%= comment.body %> </p>
 
 <p><small>Commentaire de: <%= comment.user.name %> publié le  <%=@link.created_at.strftime("%e %b %Y") %> </small></p>
+
+<hr>
 
 </div>
 
