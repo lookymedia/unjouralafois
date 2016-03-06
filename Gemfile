@@ -41,7 +41,7 @@ gem "paperclip", :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523b
 
 gem 'rmagick', '~> 2.15', '>= 2.15.4'
 
-gem 'aws-sdk', '~> 2.2', '>= 2.2.24'
+gem 'aws-sdk', '<2.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
