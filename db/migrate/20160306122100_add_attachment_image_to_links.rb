@@ -1,7 +1,7 @@
 class AddAttachmentImageToLinks < ActiveRecord::Migration
   def self.up
     change_table :links do |t|
-      t.attachment :image
+      t.attachment :links, :image
     end
   end
 
