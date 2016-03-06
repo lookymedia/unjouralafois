@@ -25,7 +25,7 @@
       <h5 style="padding-bottom: 20px;" class="text-center"><%=@link.created_at.strftime("%e %b %Y") %> </h5>
 
 
-      <div class="image-post center-block"> <%= image_tag @link.image.url(:large), class: "img-responsive" %>
+      <div class="image-post center-block"> <%= image_tag @link.image.url(:large), class: "img-responsive img-rounded" %>
 
    
      <p style="padding-bottom: 20px; padding-top: 50px;">  <%= @link.message %> </p>
