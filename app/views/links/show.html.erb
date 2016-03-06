@@ -22,6 +22,8 @@
  
       <h4 style="padding-bottom: 40px;" class="text-center">Partage de: <%= @link.user.name %> </h4>
 
+      <div class="image-post center-block"> <%= image_tag @link.image.url(:large), class: "img-responsive" %>
+
    
      <p style="padding-bottom: 20px;">  <%= @link.message %> </p>
        
