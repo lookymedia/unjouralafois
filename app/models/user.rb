@@ -6,6 +6,9 @@ class User < ActiveRecord::Base
 
   has_many :links
 
+  validates_uniqueness_of :name
+  validates_uniqueness_of :email
+
  
  
 end
