@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  resources :links, :path => 'partages' do
+  resources :links, :path => 'partages', :path_names => {:new => 'nouveau'} do
   resources :comments
 end
-  devise_for :users, :path => '', :path_names => {:sign_in => 'connexion', :sign_out => 'deconnexion', :sign_up => 'joindre'}
+  devise_for :users, :path => '', :path_names => {:sign_in => 'connexion', :sign_out => 'deconnexion', :sign_up => 'joindre', :edit => 'moncompte'}
   resources :users, only: [:show]
   resources :links do
 
