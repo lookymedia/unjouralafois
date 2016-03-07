@@ -27,7 +27,7 @@ class CommentsController < ApplicationController
   def destroy
     @comment.destroy
     respond_to do |format|
-      format.html { redirect_to comments_url, notice: 'Votre commentaire a été supprimé!' }
+      format.html { redirect_to :back, notice: 'Votre commentaire a été supprimé!' }
       format.json { head :no_content }
     end
   end

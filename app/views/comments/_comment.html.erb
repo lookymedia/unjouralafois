@@ -16,9 +16,16 @@
 
 <% if comment.user == current_user %>
  
-<!-- <%= link_to 'Supprimer', comment, method: :delete, data: { confirm: 'Ëtes-vous sûr de vouloir supprimer votre commentaire?'}, class: "btn btn-sm btn-green" %> -->
+<%= button_to 'Supprimer', comment, method: :delete, data: { confirm: 'Ëtes-vous sûr de vouloir supprimer votre commentaire?'}, class: "btn btn-sm btn-green" %> 
 
 <% end %>
+
+ <% if current_user.try(:admin?) %>
+ 
+<%= button_to 'Admin Supprimer', comment, method: :delete, data: { confirm: 'Ëtes-vous sûr de vouloir supprimer votre commentaire?'}, class: "btn btn-sm btn-green" %> 
+
+<% end %>
+
 
 </div>
 
