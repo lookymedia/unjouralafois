@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+
+  resources :links, :path => 'partages' do
   resources :comments
-  devise_for :users
+end
+  devise_for :users, :path => '', :path_names => {:sign_in => 'connexion', :sign_out => 'deconnexion', :sign_up => 'joindre'}
   resources :users, only: [:show]
   resources :links do
 
@@ -11,6 +14,9 @@ Rails.application.routes.draw do
     resources :comments
   end
   root to: "links#index"
+
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
