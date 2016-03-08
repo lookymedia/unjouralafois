@@ -43,6 +43,8 @@ gem 'rmagick', '~> 2.15', '>= 2.15.4'
 
 gem 'aws-sdk', '<2.0.0'
 
+gem 'instagram'
+
 
 
 # Use ActiveModel has_secure_password
