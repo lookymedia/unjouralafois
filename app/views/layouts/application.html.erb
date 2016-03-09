@@ -6,6 +6,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="keywords" content="alcooliques anonymes, sobre, AA">
     <meta name="description" content="Partage ton 24h de sobriété en ligne.">
     <meta property="og:title" content="1 Jour À La Fois | Vibrez sobrement."/>
@@ -32,11 +34,20 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" style="padding-top: 25px;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
+                          <% if user_signed_in? == false %>
                     <span class="icon-bar" style="background:white;"></span>
                     <span class="icon-bar" style="background:white;"></span>
                     <span class="icon-bar" style="background:white;"></span>
+
+                    <% else %>
+
+                     <span class="icon-bar" style="background:black;"></span>
+                    <span class="icon-bar" style="background:black;"></span>
+                    <span class="icon-bar" style="background:black;"></span>
+
+                    <% end %>
                 </button>
            
 
