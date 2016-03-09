@@ -4,7 +4,7 @@ Rails.application.routes.draw do
  
 end
   devise_for :users, :path => '', :path_names => {:sign_in => 'connexion', :sign_out => 'deconnexion', :sign_up => 'joindre', :edit => 'moncompte'}
-  resources :users, only: [:show]
+  resources :users, :path => 'membres', only: [:show]
   resources :links do
 
     member do
@@ -16,6 +16,7 @@ end
   root to: "links#index"
 
   get 'users/show/:id' => 'users#show'
+
 
 
 
