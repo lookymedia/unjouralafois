@@ -31,10 +31,11 @@
 
      <nav class="navbar navbar-unjour navbar-static-top">
  <% end %>
+ <div class="navbar-inner">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" style="padding-top: 25px;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                           <% if user_signed_in? == false %>
                     <span class="icon-bar" style="background:white;"></span>
@@ -91,7 +92,7 @@
             </div>
 
     
-           
+           </div>
     
         </div>
         <!-- /.container-fluid -->
