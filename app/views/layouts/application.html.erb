@@ -60,7 +60,7 @@
 				<% if user_signed_in? %>
 
 					<ul class="nav navbar-nav navbar-right">
-						<li><%= link_to new_link_path, class: "btn-green" do %><i class="fa fa-pencil" style="padding-right: 7px;"></i>Partager <% end %></li>
+						<li style="padding-right: 10px;"><%= link_to new_link_path, class: "btn-green" do %><i class="fa fa-pencil" style="padding-right: 7px;"></i>Partager <% end %></li>
                         <li><%= link_to 'Journal de bord', root_url %></li>
 						<li><%= link_to 'Mon compte', edit_user_registration_path %></li>
 						<li><%= link_to 'Se deconnecter', destroy_user_session_path, :method => :delete %></li>
