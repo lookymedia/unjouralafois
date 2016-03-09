@@ -11,6 +11,9 @@
 <meta property="og:image" content="https://s3.amazonaws.com/unjouralafois/facebookimage.png"/>
 <meta property="og:site_name" content="1 Jour À La Fois"/>
 <meta property="og:description" content="Partage ton 24h de sobriété en ligne."/>
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -34,7 +37,7 @@
 				<% if user_signed_in? %>
 
 					<ul class="nav navbar-nav">
-						<li><%= link_to 'Partager', new_link_path, class: "btn-green" %></li>
+						<li><%= link_to new_link_path, class: "btn-green" do %><i class="fa fa-pencil" style="padding-right: 7px;"></i>Partager <% end %></li>
                        <li><%= link_to 'Journal de bord', root_url %></li>
 						<li><%= link_to 'Mon compte', edit_user_registration_path %></li>
 						<li><%= link_to 'Se deconnecter', destroy_user_session_path, :method => :delete %></li>
