@@ -48,7 +48,9 @@
                        <%= link_to 'Joindre', new_user_registration_path, class: "btn-green" %>
                     </li>
                     <li>
-                       <%= link_to 'Se connecter', new_user_session_path %>
+                       <%= link_to new_user_session_path do %>
+                      <i class="fa fa-user" style="padding-right: 7px;"></i>Se connecter
+                       <% end %>
                     </li> </ul> 
                     <% end %>
                    

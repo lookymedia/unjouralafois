@@ -11,6 +11,8 @@
 <meta property="og:image" content="https://s3.amazonaws.com/unjouralafois/facebookimage.png"/>
 <meta property="og:site_name" content="1 Jour À La Fois"/>
 <meta property="og:description" content="Partage ton 24h de sobriété en ligne."/>
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -45,7 +47,9 @@
                        <%= link_to 'Joindre', new_user_registration_path, class: "btn-green" %>
                     </li>
                     <li>
-                       <%= link_to 'Se connecter', new_user_session_path %>
+                      <%= link_to new_user_session_path do %>
+                      <i class="fa fa-user" style="padding-right: 7px;"></i>Se connecter
+                       <% end %>
                     </li> </ul> 
                     <% end %>
                    
