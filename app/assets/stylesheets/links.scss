@@ -151,5 +151,6 @@ padding: 30px; color: #39CA74;
 
 @media (max-width:900px) { .partage {width:100%;} .joinmobile {display:block;} }
 
+@media (max-width:200px) and (max-width 500px) { .navbar-brand {width:80%;} }
 
 footer {height: 75px; background-color: white; text-align: center; color:#000000; line-height: 75px;}
