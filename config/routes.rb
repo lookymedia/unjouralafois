@@ -15,6 +15,8 @@ end
   end
   root to: "links#index"
 
+  get 'users/show/:id' => 'users#show'
+
 
 
 

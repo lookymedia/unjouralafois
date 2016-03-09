@@ -1,11 +1,19 @@
 class UsersController < ApplicationController
 
+	before_filter :authenticate_user!
+
 	layout "withheader", except: [:index]
 
 
 def show
-  @users = User.all
+ @user = User.find(params[:id])
+
+    respond_to do |format|
+        format.html # show.html.erb
+        format.xml { render :xml => @user }
+    end
 end
+
 
 
 
