@@ -21,6 +21,11 @@
       <%= f.label "Courriel" %>
       <%= f.email_field :email, class: "form-control", :autofocus => true %>
     </div>
+    <div class="form-group">
+      <%= f.label "Ta ville" %>
+      <%= f.text_field :location, class: "form-control", required: true %>
+    </div>
+    
      <div class="form-group">
       <%= f.label "Nouveau mot de passe" %><br> <small><i class="fa fa-info-circle" style="padding-right: 7px;"> Seulement remplir si tu veux changer ton mot de passe</i></small>
       <%= f.password_field :password, class: "form-control", :autocomplte => "off" %>

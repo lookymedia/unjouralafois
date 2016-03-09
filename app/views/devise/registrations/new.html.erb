@@ -8,11 +8,16 @@
       <%= f.text_field :name, class: "form-control", autofocus: true, required: true %>
     </div>
 
-
   <div class="form-group">
     <%= f.label "Ton courriel" %><br />
     <%= f.email_field :email,  class: "form-control", required: true %>
   </div>
+
+  <div class="form-group">
+      <%= f.label "Ta ville" %>
+      <%= f.text_field :location, class: "form-control", required: true %>
+    </div>
+
 
     <div class="form-group">
     <%= f.label "Mot de passe" %>
@@ -26,6 +31,8 @@
     <%= f.label "Confirmer mot de passe" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+
+  
 
   <div class="form-group">
     <%= f.submit "Joindre", class: "btn btn-green" %>
