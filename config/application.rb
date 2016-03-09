@@ -25,10 +25,6 @@ module Unjouralafois
     config.active_record.raise_in_transactional_callbacks = true
   end
 
-config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
-    r301 %r{.*}, 'http://1jouralafois.com$&',
-  :if => Proc.new { |rack_env| rack_env['SERVER_NAME'] != '1jouralafois.com' }
-  # rewrite rules here
-end
+
   
 end
