@@ -13,18 +13,18 @@
 
   <div class="form-group">
     <%= f.label "Sujet" %><br />
-    <%= f.text_field :title, class: "form-control" %>
+    <%= f.text_field :title, :placeholder => "Quel est le sujet de ton partage?", class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= f.label "Image" %> <i>(Facultatif)</i><br />
+    <%= f.label "Ajoute une image" %> <i>(Facultatif)</i><br />
     <%= f.file_field :image %>
   </div>
 
 
   <div class="form-group">
     <%= f.label "Ton partage" %><br />
-    <%= f.text_area :message, cols: "30", rows: "10", class: "form-control"%>
+    <%= f.text_area :message, cols: "30", rows: "10", :placeholder => "", class: "form-control"%>
   </div>
   <div class="form-group">
     <%= f.submit "Partager", class: "btn btn-green center-block" %>

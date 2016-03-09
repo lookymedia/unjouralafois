@@ -18,11 +18,11 @@
       <%= f.email_field :email, class: "form-control", :autofocus => true %>
     </div>
      <div class="form-group">
-      <%= f.label "Nouveau mot de passe" %><br> <i class="fa fa-info-circle" style="padding-right: 7px;"> Seulement remplir si tu veux changer ton mot de passe</i>
+      <%= f.label "Nouveau mot de passe" %><br> <small><i class="fa fa-info-circle" style="padding-right: 7px;"> Seulement remplir si tu veux changer ton mot de passe</i></small>
       <%= f.password_field :password, class: "form-control", :autocomplte => "off" %>
     </div>
      <div class="form-group">
-      <%= f.label "Mot de passe actuel" %> <br><i class="fa fa-info-circle" style="padding-right: 7px;">  Confirmer ton mot de passe actuel pour enregistrer les changements</i>
+      <%= f.label "Mot de passe actuel" %> <br> <small><i class="fa fa-info-circle" style="padding-right: 7px;">  Confirmer ton mot de passe actuel pour enregistrer les changements</i></small>
       <%= f.password_field :current_password, class: "form-control", :autocomplte => "off" %>
     </div>
     <div class="form-group">

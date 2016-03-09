@@ -72,7 +72,7 @@
   <%= simple_form_for [@link, Comment.new] do |f| %>
 
       <div class="field">
-        <%= f.text_area :body, cols: "30", rows: "8", class: "form-control" %>
+        <%= f.text_area :body, cols: "30", rows: "8", class: "form-control", :placeholder => "Laisse ton commentaire sur ce partage!" %>
       </div>
 
       <br>
