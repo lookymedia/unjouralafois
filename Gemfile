@@ -45,6 +45,8 @@ gem 'aws-sdk', '<2.0.0'
 
 gem 'instagram'
 
+gem 'rack-rewrite', '~> 1.5', '>= 1.5.1'
+
 
 
 # Use ActiveModel has_secure_password
