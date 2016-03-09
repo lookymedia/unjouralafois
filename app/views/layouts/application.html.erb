@@ -67,7 +67,7 @@
 
 					<% else %>
                     <li>
-                       <%= link_to 'Joindre', new_user_registration_path, class: "btn-green" %>
+                       <%= link_to new_user_registration_path, class: "btn-green" do %><span class="glyphicon glyphicon-user" style="vertical-align: -3px;"></span>  Joindre<% end %>
                     </li>
                     <li>
                        <%= link_to 'Se connecter', new_user_session_path %>
