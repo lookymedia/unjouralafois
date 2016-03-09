@@ -31,7 +31,7 @@
 
      <nav class="navbar navbar-unjour navbar-static-top">
  <% end %>
- <div class="navbar-inner">
+
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -92,7 +92,7 @@
             </div>
 
     
-           </div>
+       
     
         </div>
         <!-- /.container-fluid -->
@@ -101,19 +101,39 @@
 
  <% if user_signed_in? == false %>
     <header>
+
+    <div class="row hidden-xs" >
         <div class="header-content">
             <div class="header-content-inner">
+          
                 <h2 style="font-family: 'Pacifico', cursive; font-size: 100px;">Vibrez sobrement.</h2>
+            
                 
                 <h3 style="font-size: 48px; font-family: 'moskau_groteskregular';">#1jouralafois</h3>
 
                  <div class="joinmobile" style="padding-top: 40px;"><%= link_to 'Joindre', new_user_registration_path, class: "btn-green" %></div>
-
+</div>
 
                
             </div>
         </div>
       
+      <div class="row visible-xs" >
+        <div class="header-content">
+            <div class="header-content-inner">
+          
+                <h2 style="font-family: 'Pacifico', cursive; font-size: 50px;">Vibrez sobrement.</h2>
+            
+                
+                <h3 style="font-size: 48px; font-family: 'moskau_groteskregular';">#1jouralafois</h3>
+
+                 <div class="joinmobile" style="padding-top: 40px;"><%= link_to 'Joindre', new_user_registration_path, class: "btn-green" %></div>
+</div>
+
+               
+            </div>
+        </div>
+
     </header>
 
     <% else %>
