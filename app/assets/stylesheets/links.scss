@@ -21,6 +21,14 @@ body {
     border-radius: 5px; 
 }
 
+
+.navbar-brand {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+
 @font-face {
     font-family: 'moskau_groteskregular';
     src: url('/assets/moskaugrotesk-webfont.eot');
@@ -147,6 +155,7 @@ padding: 30px; color: #39CA74;
 
 .img-responsive {
     margin: 0 auto;
+
 }
 
 @media (max-width:900px) { .partage {width:100%;} .joinmobile {display:block;} }

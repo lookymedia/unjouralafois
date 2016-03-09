@@ -6,7 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <meta name="keywords" content="alcooliques anonymes, sobre, AA">
     <meta name="description" content="Partage ton 24h de sobriété en ligne.">
@@ -161,12 +161,14 @@
 
 
   <section class="journal">
+ 
+
        <div class="partage">
-        <div class="container">
+      
 
 <%= yield %>
 
-</div>
+
 </div>
 </section>
 
