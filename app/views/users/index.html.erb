@@ -1,28 +1,7 @@
 
 
 
-<h1 class="text-center">Users 2</h1>
+<h1 class="text-center">Liste</h1>
 
-<% if @users.each == current_user %>
+<%= User.first %>
 
-<% @links.each do |link| %>
-
-    
-    
-      <h2 style="padding-bottom: 5px;"> <%= image_tag 'journal.png'%> <%= link_to link.title, link %> </h2>
-           <h5 style="padding-bottom: 5px;"><span class="glyphicon glyphicon-user"></span> Partage de: <%=link.user.name %> </h5>
-           <h6 style="padding-bottom: 5px;"><span class="glyphicon glyphicon-calendar"></span> <%=link.created_at.strftime("%e %b %Y") %> </h6>
-
-            <div class="image-post-index"> <%= link_to image_tag(link.image.url(:medium), class: "img-rounded"), link  %></div>
-
-     <p>  <%= link.message %> </p> <button class=" btn btn-default"><span class="glyphicon glyphicon-comment"></span>   <%= link_to 'Laissez un commentaire', link %></button> <span class="glyphicon glyphicon-heart text-center" style="color:red;"></span> <%= link.get_likes.count %> 
-     
-
-    <hr>
-
-     
-    <% end %>
-
-<% else %>
-
-<% end %>

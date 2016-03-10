@@ -29,7 +29,7 @@
     
     
       <h2 style="padding-bottom: 5px;"> <%= image_tag 'journal.png'%> <%= link_to link.title, link %> </h2>
-           <h5 style="padding-bottom: 5px;"><span class="glyphicon glyphicon-user"></span> Partage de: <%=link.user.name %> </h5>
+           <h5 style="padding-bottom: 5px;"><span class="glyphicon glyphicon-user"></span> Partage de: <%= link_to link.user.name, user_path(link.user) %> </h5>
            <h6 style="padding-bottom: 5px;"><span class="glyphicon glyphicon-calendar"></span> <%=link.created_at.strftime("%e %b %Y") %> </h6>
             <h6 style="padding-bottom: 5px;"><span class="glyphicon glyphicon-home"></span> <%=link.user.location %> </h6>
 

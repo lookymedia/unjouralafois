@@ -17,7 +17,7 @@ end
 
   get 'users/show/:id' => 'users#show'
 
-
+  get 'users/index' => 'users#index'
 
 
 

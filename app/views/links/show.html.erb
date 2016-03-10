@@ -22,7 +22,7 @@
 
 
  
-      <h4 style="padding-bottom: 20px;" class="text-center"><span class="glyphicon glyphicon-user"></span> Partage de: <%= @link.user.name %> </h4>
+      <h4 style="padding-bottom: 20px;" class="text-center"><span class="glyphicon glyphicon-user"></span> Partage de: <%= link_to @link.user.name, user_path(@link.user) %> </h4>
 
       <h5 style="padding-bottom: 20px;" class="text-center"><span class="glyphicon glyphicon-calendar"></span> <%=@link.created_at.strftime("%e %b %Y") %> </h5>
 
