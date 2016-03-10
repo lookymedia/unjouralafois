@@ -17,7 +17,9 @@
 
 <div class="form-group">
 
-<%= f.submit "Se connecter", class: "btn btn-green center-block" %>
+<%= f.submit "Se connecter", class: "btn btn-green center-block" %><br>
+
+ <%= link_to new_user_registration_path do %><p class="text-center" style="text-decoration: underline;">Tu n'as pas de compte? Clique ici pour t'inscire!</p> <% end %>
 
 </div>
 
