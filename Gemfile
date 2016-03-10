@@ -47,6 +47,8 @@ gem 'instagram'
 
 gem 'rack-rewrite', '~> 1.5', '>= 1.5.1'
 
+gem 'friendly_id', '~> 5.1'
+
 
 
 # Use ActiveModel has_secure_password
