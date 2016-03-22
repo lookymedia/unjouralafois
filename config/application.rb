@@ -26,5 +26,4 @@ module Unjouralafois
   end
 
 
-  
 end

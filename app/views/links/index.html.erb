@@ -33,7 +33,8 @@
            <h6 style="padding-bottom: 5px;"><span class="glyphicon glyphicon-calendar"></span> <%=link.created_at.strftime("%e %b %Y") %> </h6>
             <h6 style="padding-bottom: 5px;"><span class="glyphicon glyphicon-home"></span> <%=link.user.location %> </h6>
 
-            <div class="image-post-index"> <%= link_to image_tag(link.image.url(:medium), class: "img-rounded"), link  %></div>
+            <div class="image-post-index hidden-xs"> <%= link_to image_tag(link.image.url(:medium), class: "img-rounded"), link  %></div>
+            <div class="image-post-index visible-xs"> <%= link_to image_tag(link.image.url(:thumb), class: "img-rounded"), link  %></div>
 
      <p>  <%= link.message %> </p> <button class=" btn btn-default"><span class="glyphicon glyphicon-comment"></span>   <%= link_to 'Laissez un commentaire', link %></button> <span class="glyphicon glyphicon-heart text-center" style="color:red;"></span> <%= link.get_likes.count %> 
      
